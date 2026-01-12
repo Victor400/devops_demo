@@ -1,3 +1,6 @@
+from flask import Flask
+import os
+
 def test_movie_list():
     from app import MOVIES
     assert len(MOVIES) == 5, "Need exactly 5 movies in the list"
